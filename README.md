@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/yashpathik07/frontend-space-tourism](https://your-solution-url.com)
--   Live Site URL: [https://frontend-sapce-tourism.netlify.app/](https://your-live-site-url.com)
+-   Solution URL: [https://github.com/yashpathik07/frontend-space-tourism](https://github.com/yashpathik07/frontend-space-tourism)
+-   Live Site URL: [https://frontend-sapce-tourism.netlify.app/]([https://your-live-site-url.com](https://frontend-sapce-tourism.netlify.app/))
 
 ## My process
 
