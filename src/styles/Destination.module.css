@@ -1,0 +1,173 @@
+#destination {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-block-start: 14rem;
+    padding-inline: 1rem;
+}
+
+#destination h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'barlow Condensed', sans-serif;
+    margin-block-end: 3rem;
+    padding-inline-start: 8rem;
+    letter-spacing: 2px;
+}
+
+#destination h2 span {
+    padding-inline-end: 1rem;
+    letter-spacing: 2px;
+    color: #7c7c80;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.destinationContent {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    padding-block-end: 10rem;
+}
+
+.destinationContent .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destinationContent .image img {
+    animation: rotation 40s infinite linear;
+}
+
+.destinationContent .information {
+    width: 50%;
+}
+
+.destinationContent .information menu {
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 2rem;
+}
+
+.information .about h1 {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.information .about .description {
+    font-family: 'Barlow', sans-serif;
+    color: #d0d6f9;
+    width: 80%;
+    margin-block-end: 2rem;
+}
+
+.information .about hr {
+    border: none;
+    border-bottom: 0.8px solid #727274;
+    margin-block-end: 2rem;
+    width: 80%;
+}
+
+.information .about .calculations {
+    display: flex;
+    gap: 4rem;
+}
+
+.information .about .calculations span {
+    text-transform: uppercase;
+    color: #d0d6f9;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.information .about .calculations p {
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding-block-start: 5px;
+}
+
+@media (max-width: 950px) {
+    #destination {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        padding-block-start: 8rem;
+    }
+
+    .destinationContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destinationContent .image {
+        width: 100%;
+    }
+
+    .destinationContent .image img {
+        width: 300px;
+        aspect-ratio: 1;
+    }
+
+    .destinationContent .information {
+        width: 100%;
+    }
+
+    .destinationContent .information menu {
+        justify-content: center;
+    }
+
+    .information .about .description {
+        width: 100%;
+    }
+
+    .information .about hr {
+        width: 100%;
+    }
+
+    .information .about .calculations {
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #destination {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+
+    #destination h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline-start: 0;
+    }
+
+    .destinationContent {
+        padding: 0;
+        padding-block-end: 2rem;
+    }
+
+    .information .about .calculations {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,21 @@
+.circleBtn button {
+    background-color: transparent;
+    border: 0.1px solid white;
+    outline: none;
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.circleBtn button:hover,
+.circleBtn button.active {
+    color: #000000;
+    background-color: #ffffff;
+}

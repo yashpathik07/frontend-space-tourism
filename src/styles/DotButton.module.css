@@ -1,0 +1,14 @@
+.dotBtn button {
+    background-color: #747474;
+    border: none;
+    border-radius: 100%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    transition: all 0.3 ease;
+}
+
+.dotBtn button:hover,
+.dotBtn button.active {
+    background-color: #ffffff;
+}

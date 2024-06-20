@@ -1,0 +1,130 @@
+#home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-block-start: 10rem;
+    /* border: 1px solid salmon; */
+    display: flex;
+    gap: 2rem;
+}
+
+.homeAbout {
+    /* border: 1px solid salmon; */
+    width: 50%;
+    padding: 1rem;
+    margin-block-start: 12rem;
+    padding-inline-start: 10rem;
+}
+
+.homeAbout h3 {
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #d0d6f9;
+    margin-block-start: 8rem;
+}
+
+.homeAbout h1 {
+    text-transform: uppercase;
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-family: 'Bellefair', serif;
+    font-weight: 500;
+}
+
+.homeAbout p {
+    font-family: 'Barlow', serif;
+    max-width: 28rem;
+}
+
+.explore {
+    /* border: 1px solid salmon; */
+    width: 50%;
+    padding: 1rem;
+    margin-block-start: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore a {
+    color: #000000;
+    font-family: 'Bellefair', serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.explore a:hover {
+    box-shadow: 0px 0px 0px 77px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 950px) {
+    #home {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        flex-direction: column;
+        text-align: center;
+        padding-block-start: 2rem;
+    }
+
+    .homeAbout {
+        width: 100%;
+        margin-block-start: 1rem;
+        padding-inline: 7rem;
+    }
+
+    .homeAbout p {
+        max-width: 100%;
+        padding-inline: 4rem;
+    }
+
+    .explore {
+        width: 100%;
+        margin-block-start: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        flex-direction: column;
+        text-align: center;
+        padding-block-start: 2rem;
+    }
+
+    .homeAbout {
+        width: 100%;
+        margin-block-start: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .homeAbout p {
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .explore {
+        width: 100%;
+        margin-block-start: 3rem;
+    }
+
+    .explore a {
+        width: 150px;
+    }
+
+    .explore a:hover {
+        box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.1);
+    }
+}
